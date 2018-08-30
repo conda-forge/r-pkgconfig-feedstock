@@ -1,7 +1,7 @@
 About r-pkgconfig
 =================
 
-Home: https://github.com/gaborcsardi/pkgconfig
+Home: https://github.com/r-lib/pkgconfig
 
 Package license: MIT
 
