@@ -15,20 +15,18 @@ source:
   sha256: 25997754d1adbe7a251e3bf9879bb52dced27dd8b84767d558f0f644ca8d69ca
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip               # [win]
-
+    - {{posix}}zip
   host:
     - r-base
-
   run:
     - r-base
 
@@ -43,8 +41,7 @@ about:
   summary: Set configuration options on a per-package basis. Options set by a given package only
     apply to that package, other packages are unaffected.
   license_family: MIT
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\MIT'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
 
 extra:
   recipe-maintainers:
