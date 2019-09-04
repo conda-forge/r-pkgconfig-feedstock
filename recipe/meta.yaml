@@ -17,7 +17,7 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 1002
+  number: 1003
   rpaths:
     - lib/R/lib/
     - lib/
@@ -41,7 +41,9 @@ about:
   summary: Set configuration options on a per-package basis. Options set by a given package only
     apply to that package, other packages are unaffected.
   license_family: MIT
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+  license_file: 
+    - '{{ environ["PREFIX"] }}/lib/R/share/licenses/MIT'
+    - LICENSE 
 
 extra:
   recipe-maintainers:
