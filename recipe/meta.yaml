@@ -17,14 +17,14 @@ source:
 build:
   noarch: generic
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   rpaths:
     - lib/R/lib/
     - lib/
 
 requirements:
   build:
-    - {{posix}}zip
+    - {{ posix }}zip
   host:
     - r-base
   run:
