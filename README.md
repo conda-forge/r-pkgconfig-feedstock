@@ -1,11 +1,11 @@
-About r-pkgconfig
-=================
+About r-pkgconfig-feedstock
+===========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pkgconfig-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/r-lib/pkgconfig
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-pkgconfig-feedstock/blob/main/LICENSE.txt)
 
 Summary: Set configuration options on a per-package basis. Options set by a given package only apply to that package, other packages are unaffected.
 
